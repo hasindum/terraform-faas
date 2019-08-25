@@ -16,3 +16,13 @@ make test (still not completed)
 make destroy
 
 * Please export aws credential before run the make command.
+
+URL's 
+
+openfaas endpoint
+
+<NLB_DNS>:80
+
+Grafana endpoint
+
+<NLB_DNS>:8080
