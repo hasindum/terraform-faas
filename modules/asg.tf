@@ -7,7 +7,7 @@ resource "aws_autoscaling_group" "fass_instance" {
   desired_capacity          = "2"
   health_check_grace_period = 0
   launch_configuration      = "${aws_launch_configuration.fass_instance.name}"
-  target_group_arns = ["${aws_lb_target_group.controllers.arn}"]
+  target_group_arns = ["${aws_lb_target_group.controllers.arn}","${aws_lb_target_group.controllers-grafana.arn}"]
   tags = [
     "${concat(
         data.null_data_source.tags.*.outputs,
