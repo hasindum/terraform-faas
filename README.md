@@ -13,3 +13,5 @@ make test (still not completed)
 To clean up all AWS resources, run:
 
 make destroy
+
+* Please export aws credential before run the make command.
